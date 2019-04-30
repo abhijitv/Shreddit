@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Shreddit"
+             x:Class="Shreddit.MainPage">
+
+    <StackLayout Orientation="Vertical">
+
+        <Label Text="Choose Date"/>
+
+        <DatePicker x:Name="dtPicker"  Date="{Binding _dtConsumed}"/>
+        <TimePicker x:Name="TmPicker"  Time="{Binding _tmConsumed}" />
+        <Entry x:Name="txtFoodItem" Text="{Binding _foodItem}"/>
+        
+        <Button Command="{Binding _saveFoodCommand}" Text="Save"/>
+        <Button Text="Show Me" Clicked="btnShowMe_clicked" />
+        
+    </StackLayout>
+
+
+</ContentPage>
