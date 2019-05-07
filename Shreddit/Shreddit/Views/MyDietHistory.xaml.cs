@@ -18,7 +18,7 @@ namespace Shreddit.Views
 			InitializeComponent ();
             MyDietHistoryVM viewmodel = new MyDietHistoryVM();
             this.BindingContext = viewmodel;
-            this.lsvDietHistory.ItemsSource = viewmodel.MyDietHistory;
+            this.lsvDietHistory.ItemsSource = viewmodel.groupedDietHistory;
         }
 	}
 }

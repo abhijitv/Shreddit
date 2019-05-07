@@ -24,8 +24,8 @@ namespace Shreddit.ViewModels
         public  MainVm()
         {
             _saveFoodCommand = new SaveFoodCommand(this );
-            _dtConsumed = DateTime.Now;
-            _tmConsumed = DateTime.Now.TimeOfDay;
+            _dtConsumed = DateTime.Today;
+            _tmConsumed = DateTime.Now.TimeOfDay; // to get the current time value 
          
             
         }

@@ -24,13 +24,13 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <ListView x:Name="lsvDietHistory" HasUnevenRows="True"  >
+            <ListView x:Name="lsvDietHistory" HasUnevenRows="True"  GroupDisplayBinding="{Binding Heading }" IsGroupingEnabled="True" >
                 <ListView.ItemTemplate>
 
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Vertical">
-                                <Label Text="{Binding dtConsumed}" />
+                                
                                 <Label Text="{Binding FoodItem}" Style="{StaticResource StyleFood }"/>
                             </StackLayout>
                         </ViewCell>

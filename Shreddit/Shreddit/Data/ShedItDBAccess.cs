@@ -40,5 +40,11 @@ namespace Shreddit.Data
 
         }
 
+       public List<DateConsumed> GetUniqueDates()
+        {
+
+            return conn.Query<DateConsumed>("select distinct (dtConsumed)  from  [FoodConsumed]");
+        }
+
     }
 }
